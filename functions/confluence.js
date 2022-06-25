@@ -1,7 +1,5 @@
 const Confluence = require("confluence-api");
 
-
-
 const configConfluence = {
     username : process.env.CONFLUENCE_USERNAME,
     password : process.env.CONFLUENCE_TOKEN,
