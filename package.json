@@ -1,0 +1,29 @@
+{
+  "name": "notion2conflence",
+  "version": "1.0.0",
+  "description": "An Project for transfering the Document from Notion to Confluence",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "Notion",
+    "Confluence",
+    "DocumentMigration"
+  ],
+  "author": "Shashwat Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "dependencies": {
+    "@notionhq/client": "^1.0.4",
+    "body-parser": "^1.20.0",
+    "confluence-api": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}
