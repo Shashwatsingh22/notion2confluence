@@ -25,9 +25,9 @@ Create a Nodejs Application The application must read Notion Documents and creat
 
 ## Demo 🎬
 Take Note 📝- 
-**Page_id**
+#### Page_id
 ![Notion PageId](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/notionPageId.PNG?token=GHSAT0AAAAAABHOJS3X2S536MBWJUKXSG2IYVY3JXQ)
-**Confluence Workspace Name**
+#### Confluence Workspace Name
 ![Conf WorkSpaceName](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/workspacenameConf.PNG?token=GHSAT0AAAAAABHOJS3X47GNV7OM3LTLWNCOYVY3KEQ)
 ### Notion Page 
 ![Notion Page](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/notionPage.PNG?token=GHSAT0AAAAAABHOJS3W5YX6HVBPD653OMR2YVY3K2A)
