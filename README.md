@@ -1,7 +1,7 @@
 # Notion✖Confluence
 
 ## Introduction About Application 🤔
-An Application which can help you to transfer your page from **Notion** to **Confluence** (By Just Provide Some Details).🧲.
+An Application which can help you to transfer your page from **Notion** to **Confluence** (By Just Providing Some Details).🧲.
 
 ## Problem Statement 👀
 **Notion** to **Confluence** converter: Notion and Confluence both provide a rich ecosystem to maintain documentation and workspaces for organisations. When companies scale, many of them decide to migrate their workspaces from notion to confluence because of the added benefits that come with it. A tool to automate the process is often indispensable.
@@ -56,7 +56,7 @@ We are going to transfer this page from **Notion** to **Confluence**.
 
    
 
- - At this I concerned about Paragraphs, Lists and Tables but in future 
+ - At this time I concerned about Paragraphs, Lists and Tables but in future 
    you can able to transfer more than this.
 
     
