@@ -2,16 +2,21 @@ require('dotenv').config({path : './.env'})
 
 const express = require('express')
 const app = express()
+const path = require('path')
 
 //For Parssing the body
 const bodyParser =require('body-parser');
+
+//View Engine
+app.set('view engine','ejs');
+app.set('views','views')
 
 //for log management we need this lib
 const morgan=require('morgan');
 const port = process.env.PORT || 4000;
 
-//Controller+Route
-const main = require('./api/main')
+//Routes
+const main = require('./routes/main')
 
 //Log Type
 app.use(morgan('dev'));
@@ -19,6 +24,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
+app.use(express.static(path.join(__dirname,'public')))
 //Resolving Cors Error 
 app.use((req,res,next)=>{
     res.header("Access-Control-Allow-Origin", "*");
@@ -33,12 +39,8 @@ app.use((req,res,next)=>{
   next();
 })
 
-app.get('/',(req,res,next)=>{
-    res.status(200).json({
-        message : "Server Started Working!"
-    })});
 
-app.use('/send',main);    
+app.use('/',main);    
 
 app.use((req, res, next) => {
     const error = new Error('Not found');

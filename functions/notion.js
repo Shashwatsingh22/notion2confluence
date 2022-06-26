@@ -28,16 +28,6 @@ const decorateData = (aboutDataPresentation)=>{
     return page;            
 }  
 
-exports.getNotionPage = async(page_id)=>{
-    const response = await notion.blocks.children.list({ block_id: page_id});
-    return response;
-}  
-
-exports.getPageMetaData =  async(page_id)=>{
-  const response = await notion.pages.retrieve({ page_id: page_id });
-  return response;
-}
-
 exports.createPage = async(data) =>{
 
     let page="";
@@ -55,7 +45,7 @@ exports.createPage = async(data) =>{
                 }
                 else
                 {
-                    page+="<br>"
+                    page+="<br/>"
                 }
                 break;
 
@@ -68,7 +58,7 @@ exports.createPage = async(data) =>{
                 }
                 else
                 {
-                    page+="<br>"
+                    page+="<br/>"
                 }
                 break;
             
@@ -81,7 +71,7 @@ exports.createPage = async(data) =>{
                 }
                 else
                 {
-                    page+="<br>"
+                    page+="<br/>"
                 }
                 break;  
             
@@ -94,7 +84,7 @@ exports.createPage = async(data) =>{
                 }
                 else
                 {
-                    page+="<br>"
+                    page+="<br/>"
                 }
                 break;
             
@@ -109,7 +99,7 @@ exports.createPage = async(data) =>{
                 }
                 else
                 {
-                    page+="<br>"
+                    page+="<br/>"
                 }
 
                 if(data[count+1].type!="bulleted_list_item") page+="</ul>\n";
@@ -127,8 +117,6 @@ exports.createPage = async(data) =>{
                    for(let count=0;count<result.length;count++)
                    {
                     page+="<tr>";
-                    
-                        
                     //Rows
                      for(let itr=0;itr<result[count].table_row.cells.length;itr++)
                      {
@@ -155,8 +143,9 @@ exports.createPage = async(data) =>{
                         page+="</td>"
                         }
                     }
+                    page+="</tr>";
                 }
-                     page+="</tr>";
+                     
                    //}
                    page+="</table>";
                    //console.log("table ==>\n",page)

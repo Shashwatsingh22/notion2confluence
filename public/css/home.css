@@ -1,0 +1,73 @@
+#notion
+{
+ position: absolute;
+  left: 10%;
+}
+
+#confluence
+{
+  position: absolute;
+  bottom: 4%;
+  right: 10%;
+}
+
+h1
+{
+  font-weight: 900;
+}
+
+p{
+    font-weight: 500;
+}
+
+#mid
+{
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  z-index: 15;
+  top: 50%;
+  left: 40%;
+  margin: -100px 0 0 -150px;
+}
+
+form
+{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 10%;
+    left: 5%;
+}
+
+#screen
+{
+    position: absolute;
+    background-color: black;
+    border-color: black;
+    border-width: 5px;
+    width: 54%;
+    height: 100%;
+    bottom: 0%;
+    right: 0%;
+}
+
+h4
+{
+    color: greenyellow;
+}
+
+h5
+{
+    color: rgb(211, 244, 211);
+}
+
+#onSuccess
+{
+    position: absolute;
+    bottom : 2%;
+    top : 15%;
+    left : 10%;
+    right : 2%;
+    display: line
+}
