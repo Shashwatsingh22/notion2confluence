@@ -13,7 +13,7 @@ Create a Nodejs Application The application must read Notion Documents and creat
 
     $ git clone https://github.com/Shashwatsingh22/notion2confluence
  ### Configure the .env file
-![.env file](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/env1.PNG?token=GHSAT0AAAAAABHOJS3WOWFQX5SFE7DX7POIYVY3IYA)
+![.env file](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/env1.PNG)
 [Notion Internal Integration Token](https://www.notion.so/my-integrations)
  
 
@@ -26,22 +26,22 @@ Create a Nodejs Application The application must read Notion Documents and creat
 ## Demo 🎬
 Take Note 📝- 
 #### Page_id
-![Notion PageId](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/notionPageId.PNG?token=GHSAT0AAAAAABHOJS3X2S536MBWJUKXSG2IYVY3JXQ)
+![Notion PageId](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/notionPageId.PNG)
 #### Confluence Workspace Name
-![Conf WorkSpaceName](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/workspacenameConf.PNG?token=GHSAT0AAAAAABHOJS3X47GNV7OM3LTLWNCOYVY3KEQ)
+![Conf WorkSpaceName](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/workspacenameConf.PNG)
 ### Notion Page 
-![Notion Page](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/notionPage.PNG?token=GHSAT0AAAAAABHOJS3W5YX6HVBPD653OMR2YVY3K2A)
+![Notion Page](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/notionPage.PNG)
 We are going to transfer this page from **Notion** to **Confluence**.
 ### Home Page
-![Application Home Page](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/HomePage.PNG?token=GHSAT0AAAAAABHOJS3WIKWMOBBA4PIG5GSEYVY3MAQ)
+![Application Home Page](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/HomePage.PNG)
 ### Input Page
-![Input Page](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/InputPage.PNG?token=GHSAT0AAAAAABHOJS3W3CXGPY7TBBRIL3BWYVY3MSA)
+![Input Page](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/InputPage.PNG)
 ### Fill the info
-![Fill Up the iNfo](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/FillInfo.PNG?token=GHSAT0AAAAAABHOJS3WFEBVTMLRO43XPAQMYVY3M7A)
+![Fill Up the iNfo](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/FillInfo.PNG)
 ### Start the Process
-![Start Process Output](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/ResultProcess.PNG?token=GHSAT0AAAAAABHOJS3XKC2EPLKFSOBJNTYQYVY3NRQ)
+![Start Process Output](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/ResultProcess.PNG)
 ### Lets Look At Confluence
-![Final Transfer to the Confluence](https://raw.githubusercontent.com/Shashwatsingh22/notion2confluence/main/Demo/confFinal.PNG?token=GHSAT0AAAAAABHOJS3XEAQPJNFNQGKAESOCYVY3OAQ)
+![Final Transfer to the Confluence](https://github.com/Shashwatsingh22/notion2confluence/blob/main/Demo/confFinal.PNG)
 
 ## Future Updates (Working)
 
