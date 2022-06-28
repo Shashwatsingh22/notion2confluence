@@ -31,10 +31,12 @@ const decorateData = (aboutDataPresentation)=>{
 exports.createPage = async(data) =>{
 
     let page="";
+    let sizeOfContent=data.length;
     for(let count=0;count<data.length;count++)
     {
         const type = data[count].type;
-        
+        console.log(type);
+        //console.log(" => ",page);
         switch (type) {
             case "paragraph":
                 if(data[count].paragraph.rich_text.length)
@@ -89,7 +91,7 @@ exports.createPage = async(data) =>{
                 break;
             
             case "bulleted_list_item":
-                if(data[count-1].type!="bulleted_list_item") page+="\n<ul>";
+                if(!data[count-1] || data[count-1].type!="bulleted_list_item") page+="\n<ul>";
 
                 if(data[count].bulleted_list_item.rich_text.length)
                 {
@@ -101,8 +103,12 @@ exports.createPage = async(data) =>{
                 {
                     page+="<br/>"
                 }
-
-                if(data[count+1].type!="bulleted_list_item") page+="</ul>\n";
+                console.log(!data[count+1] || data[count+1].type!="bulleted_list_item");
+                if(!data[count+1] || data[count+1].type!="bulleted_list_item")
+                { 
+                    page+="</ul>\n"; 
+                    
+                }
                 break;
             
             case "table":
@@ -161,5 +167,6 @@ exports.createPage = async(data) =>{
                 break;
         }
     }
+    
     return page;
 }

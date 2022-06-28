@@ -5,7 +5,7 @@ const app = express()
 const path = require('path')
 
 //For Parssing the body
-const bodyParser =require('body-parser');
+const bodyParser = require('body-parser');
 
 //View Engine
 app.set('view engine','ejs');
