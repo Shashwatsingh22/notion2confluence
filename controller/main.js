@@ -42,19 +42,21 @@ exports.sendPage2Confluence = async(req,res,next) => {
 
         console.log("Trying to Finding The Page MetaData . . . . . .")
         const title = req.title;
+        console.log(title)
         console.log("Got the Metadata . . .");
         
 
         //--------Now we need the Page Blocks to create the Page ----
         console.log("Requesting for Page Blocks . . . ");
+        console.log(notionPageId)
         const pageBlocks = await notion.blocks.children.list({block_id : notionPageId});
-        
+        console.log(pageBlocks);
         
         
         //Lets Create the Page
         console.log("Recreating Page . . . . ")
         const page = await createPage(pageBlocks.results);
-        console.log(page);
+       // console.log(page);
         // console.log(pageBlocks);
         // res.status(400).json({
         //     pageBlocks : pageBlocks
@@ -62,8 +64,20 @@ exports.sendPage2Confluence = async(req,res,next) => {
         
         //Transfering Data to Confluence
         console.log("Started Sending Data to Confluence .. ..")
+        //console.log(confluenceWorkSpaceName)
+
+        // confluence.getSpace(confluenceWorkSpaceName,function(err, data) {
+        //     // do something interesting with data; for instance,
+        //     // data.results[0].body.storage.value contains the stored markup for the first
+        //     // page found in space 'space-name' matching page title 'page-title'
+        //     res.status(200).json({
+        //         message : data
+        //     })
+        // });
+
         confluence.postContent(confluenceWorkSpaceName,title,page,null,function(err,data)
         {
+ 
             
 //         })
 //     }
@@ -74,8 +88,9 @@ exports.sendPage2Confluence = async(req,res,next) => {
 //         })
 //     }
 // }
-           //console.log(data)
-           if(data.status!=400)
+        //    console.log(data);
+        //    console.log(err);
+           if(data && data.status!=400)
            {
            // console.log("here")
             res.status(200).render(
@@ -84,6 +99,7 @@ exports.sendPage2Confluence = async(req,res,next) => {
                 process : true,
                 error : false,
                 status: 200,
+                expression1 : "😉",
                 message : "Finally We Are able to Transfer the Page from Notion to Confluence!",
                 //data: page,
                 pagetitle : title,
@@ -99,6 +115,7 @@ exports.sendPage2Confluence = async(req,res,next) => {
                 process : true,
                 error : true,
                 status: 404,
+                expression1 : "😩",
                 message : err
             })}
     })          
@@ -111,6 +128,7 @@ exports.sendPage2Confluence = async(req,res,next) => {
             process : true,
                         error : true,
                         status: 500,
+                       expression1 : "😔",
                         message : "Some Internall Error Caused",
                     })
                 }

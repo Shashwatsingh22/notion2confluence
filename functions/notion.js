@@ -115,6 +115,7 @@ exports.createPage = async(data) =>{
                 //Here First we need to get the complete detail of table by blockId becoz its not giving complete info by normal call
                 const has_column_header= data[count].table.has_column_header;
                 const has_row_header= data[count].table.has_row_header;
+                console.log(has_row_header);
                 try
                 {
                    let tableData = await notion.blocks.children.list({ block_id: data[count].id});
