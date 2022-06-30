@@ -46,7 +46,7 @@ form
     background-color: black;
     border-color: black;
     border-width: 5px;
-    width: 54%;
+    width: 50%;
     height: 100%;
     bottom: 0%;
     right: 0%;
@@ -67,7 +67,7 @@ h5
     position: absolute;
     bottom : 2%;
     top : 15%;
-    left : 10%;
-    right : 2%;
+    left : 25%;
+    right : 5%;
     display: line
 }

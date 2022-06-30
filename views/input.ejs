@@ -14,28 +14,31 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Page_Id Of Notion</span>
             </div>
-            <input type="text" name="notionPageId" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" name="notionPageId" class="form-control" aria-label="notionPageId" aria-describedby="inputGroup-sizing-default">
           </div>
 
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">WorkspaceName of Confluence</span>
             </div>
-            <input type="text" name="confluenceWorkSpaceName" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" name="confluenceWorkSpaceName" class="form-control" aria-label="workSpaceName" aria-describedby="inputGroup-sizing-default">
           </div>
 
           <button type="submit" class="btn btn-outline-dark" ><strong>Start Process🔌</strong></button>
       </form>
 
-      
+      <div id="onSuccess">
+        <h5 id="headingOfProcess">  </h5>
+        <h4 id="processSteps"></h4>
+      </div>
+
         <div id="screen">
           <%if (process) {%>
-          
             <%if (!error) {%>
         <div id="onSuccess">
           <h5> Congratuallations 🎉</h5>
          <h4>{ </h4> 
-            <h4><strong> status 🙄 </strong> :  <%= status %> </h4>
+            <h4><strong> status <%= expression1 %> </strong> :  <%= status %> </h4>
           <h4><strong> message 📧 </strong> :  <%= message %> </h4>
           <h4><strong> title 📃 </strong> :  <%= pagetitle %> </h4>
           <h4><strong> WorkSpace ⚒ </strong> :  <%= workspaceName %> </h4>
@@ -45,7 +48,7 @@
           <div id="onSuccess">
             <h5> Some Error Caused 🛑</h5>
             <h4>{ </h4> 
-              <h4><strong> status 🙄 </strong> :  <%= status %> </h4>
+              <h4><strong> status <%= expression1 %> </strong> :  <%= status %> </h4>
              <h4><strong> message 📧 </strong> :  <%= message %> </h4>
              <h4>}</h4>
            </div> 
@@ -53,7 +56,6 @@
           
           <%}%>
       </div>
-      
 
 </body>
 </html>
