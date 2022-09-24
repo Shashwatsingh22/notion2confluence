@@ -1,10 +1,7 @@
 # Notion✖Confluence
 
 ## Demo🎬
-
-<iframe width="420"  height="315"  
-src="https://www.youtube.com/embed/HMPwFERH2rc">  
-</iframe>
+[![Demo](https://img.youtube.com/vi/HMPwFERH2rc/0.jpg)](https://www.youtube.com/watch?v=HMPwFERH2rc)
 
 ## Introduction About Application 🤔
 An Application which can help you to transfer your page from **Notion** to **Confluence** (By Just Providing Some Details).🧲.
